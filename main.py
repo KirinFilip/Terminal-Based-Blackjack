@@ -26,8 +26,17 @@ def hit(hand):
 
     return hand
 
-def surrender(hand):
-    pass
+def surrender(dealer_hand):
+    if ( 
+        dealer_hand[0] == "A"
+        or dealer_hand[0] == "K"
+        or dealer_hand[0] == "Q"
+        or dealer_hand[0] == "J"
+        or dealer_hand[0] == 10
+    ):
+        print("Player surrendered")
+
+
 
 # Keeping score:
 def total(hand):
@@ -41,31 +50,33 @@ def total(hand):
         total += card
     return total
 
-def result(player_hand, dealer_hand):
-    # Player Wins
+def check_result(player_hand, dealer_hand):
+    pass
+    # Player Wins - 
 
-    # Player Losses
+    # Player Losses -
 
-    # Dealer Wins
-    
-    # Draw
+    # Dealer Wins -
+
+    # Draw - player_hand = dealer_hand
 
 
 def play():
     pass
     #1 deal two hands
     #2 show player hand
-    #3 show dealers one card
-    #4 ask for player decision (HIT, STAND, SURRENDER)
-    #5 if HIT add another card to player hand
-    #6 evaluate the total player hand
-    #7 if over 21 print you lose
-    #8 if under 21 ask for player decision (HIT, STAND)
-    #9 if HIT repeat #5, #6, #7 and #8
-    #10 if STAND evaluate the total of player and dealer hand
-    #11 print player and dealer hand
-    #12 print who wins
-    #13 ask if player want to play again
+    #3 evaluate player total, if 21 -> you win print Blackjack
+    #4 show dealers one card
+    #5 ask for player decision (HIT, STAND, SURRENDER)
+    #6 if HIT add another card to player hand
+    #7 evaluate the total player hand
+    #8 if over 21 print you lose
+    #9 if under 21 ask for player decision (HIT, STAND)
+    #10 if HIT repeat #5, #6, #7 and #8
+    #11 if STAND evaluate the total of player and dealer hand
+    #12 print player and dealer hand
+    #13 print who wins
+    #14 ask if player want to play again
 
 
 hand = deal()
