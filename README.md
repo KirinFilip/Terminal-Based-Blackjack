@@ -2,11 +2,15 @@
 Simple terminal based blackjack game for one player
 
 1 deck of 52 cards
+
 player and dealer (computer)
 
 Card values:
+
 King = Queen = Jack = 10
+
 Numbered cards (2-10) = retain face value
+
 Ace = 1 or 11 depending which value advanteges the player
 
 Win conditions:
@@ -15,14 +19,15 @@ Dealer gets 21 - dealer wins
 Player and Dealer get 21 - draw (also known as Push)
 
 Player decisions:
-HIT = request another card from the dealer
-    add the value of the card to your total card value
-    if third card gives you 21 you immediately win -> Blackjack
-    if third card gives you a total of more than 21 -> you lose
+
+HIT = request another card from the dealer,
+    add the value of the card to your total card value,
+    if third card gives you 21 you immediately win -> Blackjack,
+    if third card gives you a total of more than 21 -> you lose,
     if not you may continue hitting until satisfied
-------------
+
 STAND = satisfied with your current hand
-------------
+
 SURRENDER = you surrender to the dealer and lose, another round commences
     is offered when the dealer's upcard (the card you can see)
     is either an ace or a ten value (Ace, King, Queen, Jack, Ten)
